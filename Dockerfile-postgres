@@ -1,0 +1,5 @@
+FROM postgres
+
+RUN apt-get update && apt-get install -qq -y --no-install-recommends \
+  build-essential libpq-dev curl gcc make proj-bin \
+  libgeos-dev libxml2 libjson-c-dev gdal-bin postgis
