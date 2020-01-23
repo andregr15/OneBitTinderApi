@@ -167,6 +167,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rack-cors
   rails (~> 5.2.1)
+  rake
   simple_token_authentication (~> 1.0)
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -176,4 +177,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   1.16.6
+   1.17.3

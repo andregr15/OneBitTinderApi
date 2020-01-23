@@ -1,8 +1,8 @@
 class AddPostgisExtension < ActiveRecord::Migration[5.2]
   def up
     execute %(
-      CREATE EXTENSION postgis;
-      CREATE EXTENSION postgis_topology;
+      CREATE EXTENSION IF NOT EXISTS postgis;
+      CREATE EXTENSION IF NOT EXISTS postgis_topology;
     )
   end
 

@@ -5,6 +5,8 @@ services:
     image: 'kartoza/postgis'
     volumes:
       - 'postgres:/var/lib/postgres/data'
+    ports:
+      - '5432:5432'
 
   app:
     depends_on:

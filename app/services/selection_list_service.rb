@@ -40,7 +40,7 @@ class SelectionListService
 
 
   def distance_formula
-    "ST_Distance_sphere(st_makepoint(users.longitude, users.latitude), 
+    "ST_distancesphere(st_makepoint(users.longitude, users.latitude), 
                         st_makepoint(#{@current_user.longitude}, #{@current_user.latitude}))"
   end
 
