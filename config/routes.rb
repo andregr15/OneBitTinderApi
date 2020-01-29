@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   mount ActionCable.server => '/cable'
 
   scope '/api/v1', defaults: { format: :json } do
-    devise_for :users
+    devise_for :users, controllers: {
+      sessions: 'users/sessions',
+      registrations: 'users/registrations'
+    }
   end
 
   namespace :api, defaults: { format: :json } do

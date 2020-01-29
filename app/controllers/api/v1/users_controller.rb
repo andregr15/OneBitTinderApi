@@ -10,7 +10,6 @@ class Api::V1::UsersController < ApplicationController
     build_and_save_user unless performed?
   end
 
-
   private
 
 
